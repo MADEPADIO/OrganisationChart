@@ -8,7 +8,7 @@ namespace organisationalChart
 {
     internal class Staff
     {
-    public string Name { get; set; }
+        public string Name { get; set; }
         public string Role { get; set; }
         public Staff ReportsTo { get; set; }
 

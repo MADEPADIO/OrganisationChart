@@ -1,0 +1,27 @@
+﻿<Window x:Class="SimpleCanvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCanvas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Add a DataGrid to display the data -->
+        <DataGrid Name="StaffTable" AutoGenerateColumns="True" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Loaded="StaffTable_Loaded" Grid.Column="0"/>
+
+        <Button Content="Show Tree" Click="ShowTree_Click" Grid.Row="1" />
+
+        <!--<GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+
+        --><!-- Add a Canvas to hold the diagram --><!--
+        <Canvas Name="DiagramCanvas" Background="White" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SizeChanged="DiagramCanvas_SizeChanged"/>-->
+
+        
+    </Grid>
+</Window>

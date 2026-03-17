@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47DE6D6C-AC65-4DA8-B122-904270066FDE}</ProjectGuid>
+    <ProjectGuid>{59130C45-0DD1-4B76-AC44-C9B582C276BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>organisationalChart</RootNamespace>
-    <AssemblyName>organisationalChart</AssemblyName>
+    <RootNamespace>TestTreeAlgo</RootNamespace>
+    <AssemblyName>TestTreeAlgo</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,13 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Diagram, Version=24.1.0.0, Culture=neutral, PublicKeyToken=dfdba7ce0555ea8b, processorArchitecture=MSIL">
-      <HintPath>packages\Aspose.Diagram.24.1.0\lib\net40\Aspose.Diagram.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,19 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chart.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
